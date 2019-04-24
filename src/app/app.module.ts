@@ -25,6 +25,7 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { AdminComponent } from './admin/admin.component';
 import { ProComponent } from './pro/pro.component';
 import { ClientComponent } from './client/client.component';
+import { ModelComponent } from './model/model.component';
 
 @NgModule({
   imports: [
@@ -44,6 +45,7 @@ import { ClientComponent } from './client/client.component';
     AdminComponent,
     ProComponent,
     ClientComponent,
+    ModelComponent,
 
   ],
   providers: [],
