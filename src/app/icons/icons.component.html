@@ -3,10 +3,10 @@
     <H1>Affectation Client - Conseillers</H1>
   <div class="container-fluid" >
       <div class="row">
-        <div class="card" id="conseillers">
+        <div class="card col-sm" id="clients">
                 <div class="card-header card-header-warning" >
-                  <h4 class="card-title">Liste des conseillers</h4>
-                  <p class="card-category">Choisir un conseiller dans la liste</p>
+                  <h4 class="card-title">Liste des Clients</h4>
+                  <p class="card-category">Les clients suivants n'ont pas encore été assignés</p>
                 </div>
                 <div class="card-content table-responsive table-full-width">
                   <table class="table">
@@ -39,6 +39,49 @@
                     </tbody>
                   </table>
                 </div>
-              </div>
+        </div>
+
+
+        <div class="card col-sm" id="conseillers">
+                <div class="card-header card-header-warning" >
+                  <h4 class="card-title">Liste des conseillers</h4>
+                  <p class="card-category">Choisir un conseiller dans la liste</p>
+                </div>
+                <div class="card-content table-responsive table-full-width">
+                  <table class="table">
+                    <thead class="text-danger">
+                        <th></th>
+                      <th>Nom</th>
+                      <th>Prénom</th>
+
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <td><input type="radio" aria-label=""></td>
+                        <td>Macron</td>
+                        <td>Emmanuel</td>
+
+                      </tr>
+                      <tr>
+                            <td><input type="radio" aria-label=""></td>
+                        <td>Hollande</td>
+                        <td>François</td>
+
+                      </tr>
+                      <tr>
+                            <td><input type="radio" aria-label=""></td>
+                        <td>Sarko</td>
+                        <td>Nico</td>
+  
+                      </tr>
+            
+                    </tbody>
+                  </table>
+                </div>
+        </div>
+  </div> <!-- end row-->
+
+  <div class="row">
+        <button type="button" class="btn btn-success">Assigner</button>
   </div>
 </div>
