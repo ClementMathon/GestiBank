@@ -13,6 +13,15 @@ import { SidebarClientComponent } from './sidebar-client/sidebar-client.componen
   imports: [
     CommonModule
   ],
-  declarations: [ClientComponent, ComptesClientComponent, VirementClientComponent, ProfilClientComponent, HistoriqueClientComponent, CommandesClientComponent, NotificationsClientComponent, SidebarClientComponent]
+  declarations: [
+    ClientComponent, 
+    ComptesClientComponent, 
+    VirementClientComponent, 
+    ProfilClientComponent, 
+    HistoriqueClientComponent, 
+    CommandesClientComponent, 
+    NotificationsClientComponent, 
+    SidebarClientComponent
+  ]
 })
 export class ClientModule { }
