@@ -8,11 +8,22 @@ import { HistoriqueClientComponent } from './historique-client/historique-client
 import { CommandesClientComponent } from './commandes-client/commandes-client.component';
 import { NotificationsClientComponent } from './notifications-client/notifications-client.component';
 import { SidebarClientComponent } from './sidebar-client/sidebar-client.component';
+import { ClientLayoutComponent } from './client-layout/client-layout.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [ClientComponent, ComptesClientComponent, VirementClientComponent, ProfilClientComponent, HistoriqueClientComponent, CommandesClientComponent, NotificationsClientComponent, SidebarClientComponent]
+  declarations: [
+    ClientComponent, 
+    ComptesClientComponent, 
+    VirementClientComponent, 
+    ProfilClientComponent, 
+    HistoriqueClientComponent, 
+    CommandesClientComponent, 
+    NotificationsClientComponent, 
+    SidebarClientComponent,
+    ClientLayoutComponent
+  ]
 })
 export class ClientModule { }
