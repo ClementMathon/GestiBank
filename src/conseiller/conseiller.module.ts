@@ -4,11 +4,14 @@ import { ComptesClientsComponent } from './comptes-clients/comptes-clients.compo
 import { StatistiquesComponent } from './statistiques/statistiques.component';
 import { RechercheComponent } from './recherche/recherche.component';
 import { UtilisateursComponent } from './utilisateurs/utilisateurs.component';
+import { SidebarConseillerComponent } from './sidebar-conseiller/sidebar-conseiller.component';
+import { FooterConseillerComponent } from './footer-conseiller/footer-conseiller.component';
+import { NavbarConseillerComponent } from './navbar-conseiller/navbar-conseiller.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [ComptesClientsComponent, StatistiquesComponent, RechercheComponent, UtilisateursComponent]
+  declarations: [ComptesClientsComponent, StatistiquesComponent, RechercheComponent, UtilisateursComponent, SidebarConseillerComponent, FooterConseillerComponent, NavbarConseillerComponent]
 })
 export class ConseillerModule { }

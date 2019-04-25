@@ -25,7 +25,6 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { AdminModule } from 'admin/admin.module';
 import {ClientModule} from 'client/client.module'
 import {ConseillerModule} from 'conseiller/conseiller.module'
-import { ClientLayoutComponent } from 'client/client-layout/client-layout.component';
 import { ConseillerLayoutModule } from 'conseiller/conseiller-layout/conseiller-layout.module';
 
 
@@ -47,8 +46,8 @@ import { ConseillerLayoutModule } from 'conseiller/conseiller-layout/conseiller-
   ],
   declarations: [
     AppComponent,
-    AdminLayoutComponent,
-    ClientLayoutComponent,
+    AdminLayoutComponent
+    
     
     
   ],

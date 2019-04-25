@@ -21,6 +21,7 @@ import {
   MatSelectModule
 } from '@angular/material';
 import { AdminModule } from 'admin/admin.module';
+import {ClientLayoutModule} from 'client/client-layout/client-layout.module'
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { AdminModule } from 'admin/admin.module';
     MatInputModule,
     MatSelectModule,
     MatTooltipModule,
-AdminModule
+    AdminModule,
+    ClientLayoutModule
   ],
   declarations: [
     DashboardComponent,
