@@ -22,6 +22,8 @@ import {
   AgmCoreModule
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { AdminModule } from 'admin/admin.module';
+
 
 @NgModule({
   imports: [
@@ -29,6 +31,7 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
     FormsModule,
     HttpModule,
     ComponentsModule,
+    AdminModule,
     RouterModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
