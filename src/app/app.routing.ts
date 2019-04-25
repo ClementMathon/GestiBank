@@ -21,12 +21,30 @@ const routes: Routes = [
   /*
   
   {
-    path: '',
+    path: 'adminLayout',
     component: AdminLayoutComponent,
     children: [
         {
       path: '',
       loadChildren: './layouts/admin-layout/admin-layout.module#AdminLayoutModule'
+  }]},
+
+  {
+    path: '',
+    component: ConseillerModule,
+    children: [
+        {
+      path: '',
+      loadChildren: 'Gestibank/src/conseiller/conseiller.module'
+  }]},
+
+  {
+    path: 'admin',
+    component: AdminModule,
+    children: [
+        {
+      path: '',
+      loadChildren: 'Gestibank/src/admin/admin.module'
   }]},
 
   {
