@@ -6,7 +6,7 @@ import { ClientModule } from '../../../misc/sourceModules/client/client.module';
 @NgModule({
   imports: [
     CommonModule,
-    ClientModule
+    ClientModule,
   ],
   declarations: [ClientLayoutComponent]
 })
