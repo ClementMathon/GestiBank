@@ -4,19 +4,30 @@ import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { ClientLayoutComponent } from 'client/client-layout/client-layout.component';
 
 const routes: Routes = [
   {
     path: '',
     redirectTo: 'dashboard',
     pathMatch: 'full',
-  }, {
+  }, 
+  {
     path: '',
     component: AdminLayoutComponent,
     children: [
         {
       path: '',
       loadChildren: './layouts/admin-layout/admin-layout.module#AdminLayoutModule'
+  }]},
+
+  {
+    path: 'client',
+    component: ClientLayoutComponent,
+    children: [
+        {
+      path: '',
+      loadChildren: 'Gestibank/src/client/client-layout/client-layout.module#clientLayoutModule'
   }]}
     // { path: 'dashboard',      component: DashboardComponent },
     // { path: 'user-profile',   component: UserProfileComponent },
