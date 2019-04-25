@@ -8,6 +8,7 @@ import { HistoriqueClientComponent } from './historique-client/historique-client
 import { CommandesClientComponent } from './commandes-client/commandes-client.component';
 import { NotificationsClientComponent } from './notifications-client/notifications-client.component';
 import { SidebarClientComponent } from './sidebar-client/sidebar-client.component';
+import { ClientLayoutComponent } from './client-layout/client-layout.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { SidebarClientComponent } from './sidebar-client/sidebar-client.componen
     HistoriqueClientComponent, 
     CommandesClientComponent, 
     NotificationsClientComponent, 
-    SidebarClientComponent
+    SidebarClientComponent,
+    ClientLayoutComponent
   ]
 })
 export class ClientModule { }
