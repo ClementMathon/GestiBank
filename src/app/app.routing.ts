@@ -5,6 +5,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { ClientLayoutComponent } from 'client/client-layout/client-layout.component';
+import { ConseillerModule } from '../../misc/sourceModules/conseiller/conseiller.module';
 
 const routes: Routes = [
   {
@@ -19,6 +20,15 @@ const routes: Routes = [
         {
       path: '',
       loadChildren: './layouts/admin-layout/admin-layout.module#AdminLayoutModule'
+  }]},
+
+  {
+    path: '',
+    component: ConseillerModule,
+    children: [
+        {
+      path: '',
+      loadChildren: 'Gestibank/src/conseiller/conseiller.module'
   }]},
 
   {
