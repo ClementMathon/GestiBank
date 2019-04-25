@@ -12,7 +12,7 @@ import { ClientLayoutComponent } from './client-layout/client-layout.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
   ],
   declarations: [
     ClientComponent, 

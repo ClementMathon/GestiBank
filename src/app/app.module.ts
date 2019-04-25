@@ -28,6 +28,7 @@ import {ConseillerModule} from 'conseiller/conseiller.module'
 import { ConseillerLayoutModule } from 'conseiller/conseiller-layout/conseiller-layout.module';
 
 
+
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -46,7 +47,7 @@ import { ConseillerLayoutModule } from 'conseiller/conseiller-layout/conseiller-
   ],
   declarations: [
     AppComponent,
-    AdminLayoutComponent
+    AdminLayoutComponent,
     
     
     

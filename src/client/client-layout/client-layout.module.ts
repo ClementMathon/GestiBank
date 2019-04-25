@@ -1,13 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ClientLayoutComponent } from './client-layout.component';
-import { ClientModule } from '../../../misc/sourceModules/client/client.module';
+
+import { NavbarComponent } from 'app/components/navbar/navbar.component';
+import { ClientModule } from 'client/client.module';
 
 @NgModule({
   imports: [
     CommonModule,
     ClientModule,
   ],
-  declarations: [ClientLayoutComponent]
+  declarations: [
+    ClientLayoutComponent,
+    NavbarComponent,  
+  ]
 })
 export class ClientLayoutModule { }

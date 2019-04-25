@@ -5,13 +5,21 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { ClientLayoutComponent } from 'client/client-layout/client-layout.component';
+import { AppComponent } from './app.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ClientComponent } from 'client/client.component';
+import { CommandesClientComponent } from 'client/commandes-client/commandes-client.component';
+import { ComptesClientComponent } from 'client/comptes-client/comptes-client.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'dashboard',
-    pathMatch: 'full',
-  }, 
+
+  {path: '',      component: AppComponent },
+  {path: 'client',  component: ClientLayoutComponent},
+    
+  
+]
+  /*
+  
   {
     path: '',
     component: AdminLayoutComponent,
@@ -39,7 +47,7 @@ const routes: Routes = [
     // { path: 'upgrade',        component: UpgradeComponent },
     // { path: '',               redirectTo: 'dashboard', pathMatch: 'full' }
 ];
-
+*/
 @NgModule({
   imports: [
     CommonModule,
